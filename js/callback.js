@@ -1,126 +1,93 @@
-// const printMessage = function(message) {
-//   console.log(message);
-// };
-
-// const higherOrderFunction = function(callback) {
-//   const string = 'HOCs are awesome';
-//   callback(string);
-// };
-
-// higherOrderFunction(printMessage);
+// let b = 10;
+// let a = b * 2;
+// console.log(a);
 
 
-// const checkId = function (id) {
-//   if (id > 4 && id <= 8) {
-//     console.log(true);
-//   }
-//   else { console.log(false);}
-// }
+const yearOfBirth = 2006;
+console.log(yearOfBirth);
 
-// const higherOrderFunction = function (callback) {
-//   const id = 5; 
-//   console.log(callback)
-//   callback(id);
-// }
-
-// higherOrderFunction(checkId);
+// const number = 1;
+// const age = 14.8;
+// console.log(age);
 
 
+const b = null;
+console.log(typeof null);
+const c = 5;
+console.log(typeof c);
+const d = 'JavaScript is awesome';
+console.log(typeof d);
+const e = false;
+console.log(typeof e);
+const message = 'JavaScript is awesome';
+console.log(message);
+const name = 'Mango';
+console.log('My name is:', name);
+// alert(message);
 
-// const summ = function (a, b) {
-//   console.log(a)
-//   return a+b
-// }
+// const isComing = confirm('Please confirm hotel reservation');
+// console.log(isComing);
 
-// ggggggggggggggggggg
+// const hotelName = prompt('Please enter desired hotel name:');
+// console.log(hotelName); 
 
-// const a = 1
-// const b = 22
-// let c = 0
+// const value = prompt('Please enter a number!');
+// console.log(typeof value);
+// console.log(value);
 
-// const summ = () => {
-//   console.log(a + b)
+// let value = 5;
+// value += 10;
+// console.log(value);
+
+// const x = 5;
+// const y = 10;
+// const z = 15;
+// console.log('x > y', x > y);
+// console.log('x < y', x < y);
+// console.log('x >= y', x >= y);
+// console.log('x === y', x === y);
+// console.log('x != y', x != y);
+
+// const type = typeof true;
+// console.log(type);
+
+// const shouldRenew = confirm('Хотите?');
+// console.log(shouldRenew);
+
+// let userInput = prompt('Введите число: 10 ');
+// userInput = Number(userInput);
+// console.log(userInput === 10);
+
+// const value = 'ffff';
+// const number = Number(value);
+// console.log(number);
+
+// const blockWidth = '300px';
+// const width = Number.parseInt(blockWidth); //преобразование в число до первого строчного символа
+// console.log(width);
+
+
+
+// метод Math - прочитать!!!
+
+let number = prompt('Введите число: ');
+number = Number(number);
+let power = prompt('Введите степень: ');
+power = Number(power);
+
+// console.log(number);
+// console.log(power);
+
+const result = Math.pow(number, power);
+console.log(result);
+
+
+
+
+
+
+
+
   
-//   c = a + b;
-// }
- 
-// const summ = function (a, b) {
-//   return a + b;
-// }
-
-// const result = function (test) {
-//   const a = 5
-//   const b = 6
-//   console.log(test)
-//   return test (a,b)
-// }
-
-// const one = result(summ);
-// console.log(one)
 
 
-// const repeatLog = function (n) {
-//   for (let i = 1; i < n; i += 1) {
-//     console.log(i)
-//   }
-// };
-// repeatLog(10);
-
-// действие как аргумент
-
-// const printValue = function (value) {
-//   console.log(value);
-// };
-// const prettyPrint = function (value) {
-//   console.log('Logging value: ', value)
-// };
-// const repeat = function (n, action) {
-//   for (let i = 0; i < n; i += 1){
-//     action(i);
-//   }
-// }
-// repeat(5, printValue);
-
-
-const printMessage = function (message) {
-  console.log(message);
-}
-const higherOrderFunction = function (callback) {
-  const string = 'HOCs are awesome';
-  callback(string)
-}
-higherOrderFunction(printMessage);
-
-
-// const repeatLog = function(n) {
-//   for (let i = 0; i < n; i += 1) {
-//     console.log(i);
-//   }
-// };
-// repeatLog(4);
-
-const printValue = function(value) {
-  console.log(value);
-};
-
-const prettyPrint = function(value) {
-  console.log('Logging value: ', value);
-};
-
-const repeat = function(n, action) {
-  for (let i = 0; i < n; i += 1) {
-    action(i);
-  }
-};
-
-// Передаем printValue как callback-функцию
-repeat(3, printValue);
-// 0
-// 1
-// 2
-
-// Передаем prettyPrint как callback-функцию
-repeat(3, prettyPrint);
-// Logging value: 0
-// Logging value: 1
-// Logging value: 2
