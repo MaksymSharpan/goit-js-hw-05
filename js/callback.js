@@ -3,26 +3,26 @@
 // console.log(a);
 
 
-const yearOfBirth = 2006;
-console.log(yearOfBirth);
+// const yearOfBirth = 2006;
+// console.log(yearOfBirth);
 
-// const number = 1;
-// const age = 14.8;
-// console.log(age);
+// // const number = 1;
+// // const age = 14.8;
+// // console.log(age);
 
 
-const b = null;
-console.log(typeof null);
-const c = 5;
-console.log(typeof c);
-const d = 'JavaScript is awesome';
-console.log(typeof d);
-const e = false;
-console.log(typeof e);
-const message = 'JavaScript is awesome';
-console.log(message);
-const name = 'Mango';
-console.log('My name is:', name);
+// const b = null;
+// console.log(typeof null);
+// const c = 5;
+// console.log(typeof c);
+// const d = 'JavaScript is awesome';
+// console.log(typeof d);
+// const e = false;
+// console.log(typeof e);
+// const message = 'JavaScript is awesome';
+// console.log(message);
+// const name = 'Mango';
+// console.log('My name is:', name);
 // alert(message);
 
 // const isComing = confirm('Please confirm hotel reservation');
@@ -70,17 +70,38 @@ console.log('My name is:', name);
 
 // метод Math - прочитать!!!
 
-let number = prompt('Введите число: ');
-number = Number(number);
-let power = prompt('Введите степень: ');
-power = Number(power);
+// let number = prompt('Введите число: ');
+// number = Number(number);
+// let power = prompt('Введите степень: ');
+// power = Number(power);
 
-// console.log(number);
-// console.log(power);
+// // console.log(number);
+// // console.log(power);
 
-const result = Math.pow(number, power);
-console.log(result);
+// const result = Math.pow(number, power);
+// console.log(result);
 
+const price = prompt('Введите сумму покупки');
+let discount = 0;
+
+if (price >= 200 && price < 2000) {
+  discount = 2;
+  console.log('Бронза, скидка 2%');
+}
+else if (price >= 2000 && price < 5000) {
+  discount = 5;
+  console.log('Серебро, скидка 5%');
+}
+else if (price >= 5000 && price < 10000) {
+  discount = 10;
+  console.log('Золото, скидка 10%');
+}
+else {
+console.log('У вас нет скидки');
+}
+let payment = price - (price * discount / 100);
+
+console.log(`Ваша покупка на сумму ${payment}`);
 
 
 
